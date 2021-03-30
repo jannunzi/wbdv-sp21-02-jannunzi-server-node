@@ -1,0 +1,14 @@
+{
+  "name": "wbdv-sp21-02-jannunzi-server-node",
+  "version": "1.0.0",
+  "description": "Sample Node Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jose Annunziato",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
