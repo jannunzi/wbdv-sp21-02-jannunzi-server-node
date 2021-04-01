@@ -1,3 +1,4 @@
+// TODO: visit https://expressjs.com/
 const express = require('express')
 const app = express()
 
@@ -19,5 +20,6 @@ demos(app)
 // quizzesController(app)
 
 require('./controllers/quizzes-controller')(app)
+require('./controllers/questions-controller')(app)
 
 app.listen(4000)
