@@ -1,13 +1,21 @@
 const quizzes = require('./quizzes.json')
 
+const quizzesModel = require("../../models/quizzes/quizzes-model")
+
 // TODO: Node.js Assignment this week
 const findAllQuizzes = () => {
-    return quizzes
+    return quizzesModel.find()
+    // return quizzes
 }
 const findQuizById = (quizId) => {
-    return quizzes.find((quiz) => {
-        return quiz._id === quizId
-    })
+    return quizzesModel
+        .findById(quizId)
+        .populate("quizzes")
+        .exec()
+    // return quizzesModel.find({_id: quizId})
+    // return quizzes.find((quiz) => {
+    //     return quiz._id === quizId
+    // })
 }
 
 // console.log(findAllQuizzes())
