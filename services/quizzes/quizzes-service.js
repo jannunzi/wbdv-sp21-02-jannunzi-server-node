@@ -8,10 +8,10 @@ const findAllQuizzes = () => {
     // return quizzes
 }
 const findQuizById = (quizId) => {
-    return quizzesModel
-        .findById(quizId)
-        .populate("quizzes")
-        .exec()
+        return quizzesModel
+            .findById(quizId)
+            .populate("quizzes")// SHOULD BE questions ... this is typo
+            .exec()
     // return quizzesModel.find({_id: quizId})
     // return quizzes.find((quiz) => {
     //     return quiz._id === quizId

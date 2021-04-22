@@ -3,7 +3,7 @@ const questionsSchema = require("../questions/questions-schema")
 const quizzesSchema = mongoose.Schema({
     _id: String,
     title: String,
-    quizzes: [{
+    quizzes: [{ // this should be "questions"
         type: String,
         ref: "QuestionsModel"
     }],
